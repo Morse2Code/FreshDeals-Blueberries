@@ -1,0 +1,24 @@
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.breadcrumb  li.location +li.location::before  {
+  content: ">";
+}
+
+.breadcrumb li.attribute a {
+  color: grey;
+  margin-left: 12px;
+}
+
+.breadcrumb li.attribute::after {
+  content: "*";
+  color: grey;
+  font-size: 10px;
+  vertical-align: super;
+}
